@@ -1,86 +1,82 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <title>Departures Board Web Installer</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-        <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
-        <style>
-            html,
-            body {
-                font-family: Questrial, sans-serif;
-                background-color: white;
-                color: black;
-                position: relative;
-                margin: 0;
-                height: 100%;
-                min-height: 100vh;
-            }
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Departures Board Web Installer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Questrial, sans-serif;
+            background-color: white;
+            color: black;
+            min-height: 100vh;
+        }
 
-            body {
-                display: flex;
-                align-items: flex-start;
-                justify-content: center;
-                overflow: hidden;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
+        body {
+            display: flex;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
 
-            .layout {
-                display: flex;
-                align-items: center;
-                max-width: 90%;
-            }
+        .layout {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
 
-            .container {
-                min-width: 300px;
-                width: 100%;
-                text-align: center;
-            }
+        .container {
+            min-width: 300px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
 
-            .subtitle {
-                margin: 4px 0px 35px;
-                font-size: 0.8rem;
-                letter-spacing: 0.3em;
-                color: #666;
-                font-weight: 600;
-            }
+        .subtitle {
+            margin: 4px 0 35px;
+            font-size: 0.8rem;
+            letter-spacing: 0.3em;
+            color: #666;
+            font-weight: 600;
+        }
 
-            p {
-                line-height: 1.3rem;
-            }
+        p {
+            line-height: 1.5rem;
+        }
 
-            .footer {
-                position: fixed;
-                bottom: 1rem;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 90%;
-                max-width: 300px;
-                gap: 0.6rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="layout">
-            <div class="container">
-                <img src="img/dblogo.svg" style="max-width: 450px; margin-top: 10%;" alt="Departures Board" />
-                <div class="subtitle">ONLINE WEB INSTALLER</div>
-                <img src="img/departuresboard.jpg" style="max-width: 300px; margin-bottom: 10px;">
-                <p>Attach your Departures Board to a USB port and click <b>Connect</b>.</p>
-                <esp-web-install-button manifest="./manifest.json"></esp-web-install-button>
-                <div style="margin-top:20px; max-width: 575px;"><p>Source code and build instructions can be found <a href="https://github.com/gadec-uk/departures-board" target="_blank">here</a>. This software is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0</a>.<br>No commercial use allowed (including reselling in kit or assembled form).</p></div>
-                <div class="footer">
-                    <img src="img/gadeclogo.svg" style="max-width:80px" alt="Gadec"/>
-                    <div>&copy; 2026 Gadec Software.</div>
-                </div>
+        .footer {
+            padding: 0rem 1rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.6rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="container">
+            <img src="img/dblogo.svg" style="max-width: 450px; margin-top: 5%;" alt="Departures Board" />
+            <div class="subtitle">ONLINE WEB INSTALLER</div>
+            <img src="img/departuresboard.jpg" style="max-width: 300px; margin-bottom: 10px;" alt="Departures Board Device">
+            <p>Attach your Departures Board to a USB port and click <b>Connect</b>.</p>
+            <esp-web-install-button manifest="./manifest.json"></esp-web-install-button>
+            <div style="margin-top:20px;">
+                <p>Source code and build instructions can be found <a href="https://github.com/gadec-uk/departures-board" target="_blank">here</a>. This software is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0</a>.<br>No commercial use allowed (including reselling in kit or assembled form).</p>
             </div>
         </div>
-    </body>
+    </div>
+    <div class="footer">
+        <img src="img/gadeclogo.svg" style="max-width:80px" alt="Gadec"/>
+        <div>&copy; 2026 Gadec Software.</div>
+    </div>
+</body>
 </html>
