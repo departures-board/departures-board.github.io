@@ -2,7 +2,7 @@
   "name": "Departures Board",
   "version": "B2.2-W2.0",
   "funding_url": "https://buymeacoffee.com/gadec.uk",
-  "new_install_prompt_erase": true,
+  "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32",
