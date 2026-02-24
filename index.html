@@ -59,7 +59,9 @@
             gap: 0.6rem;
         }
 
-        esp-web-install-button[install-unsupported] + .install-supported-msg {display: none;}
+        .install-supported-msg {display:none;}
+
+        esp-web-install-button[install-supported] + .install-supported-msg {display: revert;}
     </style>
 </head>
 
@@ -71,7 +73,7 @@
             <img src="img/departuresboard.jpg" style="max-width: 300px; margin-bottom: 10px;" alt="Departures Board Device">
             <p></p>
             <esp-web-install-button manifest="./manifest.json">
-                <span slot="unsupported"><b>Your browser does not support installing the Departures Board firmware.</b><br>Please use Google Chrome or Microsoft Edge.</span>
+                <span slot="unsupported" style="line-height: 1.5rem;"><b>Your browser does not support installing the Departures Board firmware.</b><br>Please use Google Chrome or Microsoft Edge.</span>
             </esp-web-install-button>
             <p class="install-supported-msg">Attach your Departures Board to a USB port and click <b>Connect</b>.</p>
             <div style="margin-top:20px;">
