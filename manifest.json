@@ -1,6 +1,6 @@
 {
   "name": "Departures Board",
-  "version": "B3.5-W3.4",
+  "version": "B3.6-W3.4",
   "funding_url": "https://buymeacoffee.com/gadec.uk",
   "new_install_prompt_erase": false,
   "builds": [
