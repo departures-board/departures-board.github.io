@@ -1,16 +1,16 @@
 {
   "name": "Departures Board",
-  "version": "B3.7-W3.4",
+  "version": "B3.8-W3.5",
   "funding_url": "https://buymeacoffee.com/gadec.uk",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "https://github.gadec.co.uk?url=https://github.com/gadec-uk/departures-board/releases/download/B3.7-W3.4/bootloader.bin", "offset": 4096 },
-        { "path": "https://github.gadec.co.uk?url=https://github.com/gadec-uk/departures-board/releases/download/B3.7-W3.4/partitions.bin", "offset": 32768 },
-        { "path": "https://github.gadec.co.uk?url=https://github.com/gadec-uk/departures-board/releases/download/B3.7-W3.4/boot_app0.bin", "offset": 57344 },
-        { "path": "https://github.gadec.co.uk?url=https://github.com/gadec-uk/departures-board/releases/download/B3.7-W3.4/firmware.bin", "offset": 65536 }
+        { "path": "https://github.gadec.co.uk?url=https://github.com/gadec-uk/departures-board/releases/download/B3.8-W3.5/bootloader.bin", "offset": 4096 },
+        { "path": "https://github.gadec.co.uk?url=https://github.com/gadec-uk/departures-board/releases/download/B3.8-W3.5/partitions.bin", "offset": 32768 },
+        { "path": "https://github.gadec.co.uk?url=https://github.com/gadec-uk/departures-board/releases/download/B3.8-W3.5/boot_app0.bin", "offset": 57344 },
+        { "path": "https://github.gadec.co.uk?url=https://github.com/gadec-uk/departures-board/releases/download/B3.8-W3.5/firmware.bin", "offset": 65536 }
       ]
     }
   ]
